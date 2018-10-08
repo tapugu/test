@@ -1,0 +1,242 @@
+/* 全体 */
+* {
+    font-family: "メイリオ";
+}
+
+
+
+/* Google code-prettyの変更 */
+.prettyprint ol.linenums > li {
+    list-style-type: decimal;
+}
+
+pre .prettyprint {
+    white-space: pre;
+    overflow: auto;
+}
+
+
+
+/* ヘッダー */
+header {
+    background-image: url(../images/ヘッダー.jpg);
+    background-size: cover;
+    height: 425px;
+}
+
+
+
+/* ナビゲーション */
+.navi {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.navi a {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #202020;
+    padding: 5px 10px;
+}
+
+.navi a:hover {
+    background-color: #505050;
+}
+
+
+
+/* 記事 */
+.article {
+    border: 1px solid #000;
+    margin: 30px 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+
+/* 大見出し */
+.top-content {
+    margin-bottom: 20px;
+}
+
+.top-content h1 {
+    font-size: 50px;
+    border-bottom: 2px solid #000;
+}
+
+.top-content h2 {
+    font-size: 35px;
+}
+
+.top-content p {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
+/* 目次 */
+.index {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+}
+
+.index .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.index h3 {
+    font-size: 30px;
+}
+
+.index .index-content a {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+
+
+/* 見出し */
+.content {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+.content p {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+/* メモページ用リスト表示　*/
+.module-listView {
+    border: 1px solid #00bfff;
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.module-listView .container {
+    padding-left: 20px;
+}
+
+.module-listView h2 {
+    font-size: 35px;
+}
+
+.module-listView p {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+/* コード */
+.code {
+    margin-bottom: 20px;
+
+}
+
+.code pre {
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+
+
+/* 関数説明 */
+.method-wrapper {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+}
+
+.method-wrapper .container {
+    padding-left: 30px;
+}
+
+.method-wrapper h3 {
+    font-size: 25px;
+}
+
+.method-wrapper .comment {
+    font-size: 18px;
+}
+
+.method-wrapper .method {
+    font-size: 22px;
+}
+
+.method-wrapper .argument { 
+    font-size: 16px;
+    padding-left: 50px;
+}
+
+
+/* 引数説明 */
+.method {
+    border: 1px solid #000;
+    margin: 20px 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.method .container .method-header {
+    font-size: 22px;
+}
+
+.method .container .method-name {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.method .container .method-comment {
+    padding-left: 20px;
+}
+
+.method .container .method-syntax {
+    padding-left: 20px;
+}
+
+.method .container .argument-name {
+    float: left;
+}
+
+.method .container .argument-type {
+    float: left;
+    padding-left: 10px;
+}
+
+.method .container .argument-comment {
+    padding-left: 40px;
+}
+
+
+/* フッター */
+footer {
+    background-color: #303030;
+    color: white;
+    text-align: center;
+}
+
+
+

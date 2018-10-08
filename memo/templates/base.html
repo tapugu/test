@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block page_title %}Pythonメモ{% endblock %}</title>
+        <meta name="description" content="Pythonを中心にまとめています。使い方、モジュールの使い方などわかりやすく書いているので参考にしていただければ幸いです。">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    </head>
+
+    <body>
+
+        <!--ヘッダー-->
+        <header>
+            <div class="container">
+
+            </div>
+        </header>
+
+        <!--ナビゲーション-->
+        <div class="navi">
+            <div class="container">
+                <a href="{% url "index" %}">TOP</a>
+                <a href="{% url "memo" %}">メモ</a>
+                 <a href="{% url "blog" %}">ブログ</a>
+            </div>  
+        </div>
+
+        <!--記事-->
+        <div class="article">
+            {% block article %}
+            {% endblock %}
+        </div>
+
+        <!--フッター-->
+        <footer>
+                <p><small>&copy; 2018 python-memo.com</small></p>
+        </footer>
+    </body>
+</html>

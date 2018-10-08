@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block page_title %}Pythonメモ | メモ{% endblock %}
+
+{% block article %}
+    <!--大見出し-->
+    <div class="top-content">
+        <div class="container">
+            <h1>{{ object.name }}</h1>
+            <p>{{ object.comment }}</p>
+        </div>
+    </div>
+
+
+    <!--メソッド表示-->
+    {% for method in methods %}
+    <div class="method">
+        <div class ="container">
+            <h2 class="method-header">{{ method.header }}</h2>
+            <p class="method-name">{{ method.name }}</p>
+            <p class="method-comment">{{ method.comment }}</p>
+            <p>構文</p>
+            <p class="method-syntax">{{ method.syntax }}</p>
+            <p>引数</p>
+            {% load custum_filter %}
+            {% for argument in method.name|get_dictionary:argument_list %}
+                <p class="argument-name">{{ argument.name }}</p>
+                <p class="argument-type">{{ argument.type }}</p>
+                <p class="argument-comment">{{ argument.comment }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+
+
+{% endblock %}
